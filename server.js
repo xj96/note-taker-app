@@ -19,6 +19,16 @@ app.use(express.json());
 // HTML Page Routes
 // ======================
 
+// Homepage Route
+app.get("/", (req, res) => {
+    res.sendFile(path.join(__dirname, "public", "index.html"))
+})
+
+// Note Page Route
+app.get("/notes", (req, res) => {
+    res.sendFile(path.join(__dirname, "public", "notes.html"))
+})
+
 // API Routes
 // ======================
 
