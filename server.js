@@ -33,6 +33,23 @@ app.get("/notes", (req, res) => {
 // API Routes
 // ======================
 
+// GET
+// Read the db.json file and retuen all saved notes as JSON
+app.get("/api/notes", (req, data) => {
+
+})
+
+// POST
+// Receive a new note on req.body
+// Add the note to the db.json file
+// Return the new note to the client
+
+// DELETE
+// Receive query parameter containing the id of the note to delete
+// Read all notes from the db.json file
+// Remove the note with the specified id
+// Rewrite the note to the db.json file
+
 // Start Server
 // ===============================================
 app.listen(PORT, function () {
