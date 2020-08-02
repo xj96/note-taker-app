@@ -36,7 +36,9 @@ app.get("/notes", (req, res) => {
 // GET
 // Read the db.json file and retuen all saved notes as JSON
 app.get("/api/notes", (req, data) => {
-
+    fs.readFile("db/db.json", "utf8", () => {
+        return saveNote
+    })
 })
 
 // POST
