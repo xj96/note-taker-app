@@ -9,10 +9,11 @@ let activeNote = {};
 
 // A function for getting all notes from the db
 const getNotes = () => {
+  console.log("I AM DOING WHAT I AM UPPOSED TO DO")
   return $.ajax({
     url: "/api/notes",
     method: "GET",
-  });
+  })
 };
 
 // A function for saving a note to the db
